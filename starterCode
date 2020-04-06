@@ -1,15 +1,30 @@
-// Example program
+  // Example program
 #include <iostream>
 #include <string>
 
 int main()
 {
 
-  double num1 = 0; 
-  std::cout << "enter a number"; 
+  int num1 = 0; 
+  int num2 = 0;
+  std::cout << "enter number one "; 
   std::cin >> num1; 
+  std::cout<< "enter number two ";
+  std::cin >> num2;
   
-  double num2 = 5 + num1; 
-  std::cout << " 5 + your number is " << num2;
+  int output = num1 + num2;
+  std::cout << " Adding your numbers is " << output;
     
+  output = num1 - num2;
+  std::cout << " Subtracting your numbers is " << output;
+    
+  output = num1 * num2;
+  std::cout << " Multipying your numbers is " << output;
+  
+  output = num1 / num2;
+  std::cout << " Dividing your numbers is " << output;
+
+  output = num1 % num2;
+  std::cout << " and the remainder is " << output;
+
 }
